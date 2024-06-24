@@ -5,8 +5,8 @@ const Toolbar: React.FC = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
             <div className="container-fluid">
-                <span className="navbar-brand">Some title</span>
-                <div className="collapse navbar-collapse">
+                <span className="navbar-brand">Ice Cream Shop</span>
+                <div className="navbar-collapse collapse">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/" end>Home</NavLink>

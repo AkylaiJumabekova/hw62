@@ -4,7 +4,6 @@ import Toolbar from './components/Toolbar/Toolbar';
 import Home from './containers/Home/Home';
 import AboutUs from './containers/AboutUs/AboutUs';
 import Contacts from './containers/Contacts/Contacts';
-import "./index.css"
 
 const App: React.FC = () => {
   return (
@@ -12,7 +11,7 @@ const App: React.FC = () => {
       <header>
         <Toolbar />
       </header>
-      <main className="container-fluid">
+      <main className="container mt-4">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
