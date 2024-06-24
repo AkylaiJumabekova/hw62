@@ -10,10 +10,21 @@ const initialIceCreams: IceCream[] = [
 ];
 
 const Home: React.FC = () => {
-    const [cart, setCart] = useState<IceCream[]>([]);
+    const [cart, setCart] = useState<{ iceCream: IceCream, quantity: number }[]>([]);
 
     const addToCart = (iceCream: IceCream) => {
-        setCart((prevCart) => [...prevCart, iceCream]);
+        setCart((prevCart) => {
+            const existingItem = prevCart.find(item => item.iceCream.id === iceCream.id);
+            if (existingItem) {
+                return prevCart.map(item => 
+                    item.iceCream.id === iceCream.id 
+                    ? { ...item, quantity: item.quantity + 1 } 
+                    : item
+                );
+            } else {
+                return [...prevCart, { iceCream, quantity: 1 }];
+            }
+        });
     };
 
     return (
@@ -28,8 +39,8 @@ const Home: React.FC = () => {
             </div>
             <h2>Your purchases</h2>
             <ul>
-                {cart.map((iceCream, index) => (
-                    <li key={index}>{iceCream.flavor} - {iceCream.price} KGS</li>
+                {cart.map((item, index) => (
+                    <li key={index}>{item.iceCream.flavor} - {item.quantity} - {item.iceCream.price * item.quantity} KGS</li>
                 ))}
             </ul>
         </div>
