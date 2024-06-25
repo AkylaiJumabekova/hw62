@@ -16,10 +16,10 @@ const Home: React.FC = () => {
         setCart((prevCart) => {
             const existingItem = prevCart.find(item => item.iceCream.id === iceCream.id);
             if (existingItem) {
-                return prevCart.map(item => 
-                    item.iceCream.id === iceCream.id 
-                    ? { ...item, quantity: item.quantity + 1 } 
-                    : item
+                return prevCart.map(item =>
+                    item.iceCream.id === iceCream.id
+                        ? { ...item, quantity: item.quantity + 1 }
+                        : item
                 );
             } else {
                 return [...prevCart, { iceCream, quantity: 1 }];

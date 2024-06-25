@@ -1,13 +1,38 @@
 import React from 'react';
+import './Contacts.css';
 
 const Contacts: React.FC = () => {
     return (
         <div className="container mt-4">
-            <h1>Contacts</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quia maxime aperiam deleniti mollitia, impedit sint totam laudantium doloribus nobis voluptatum suscipit incidunt. Impedit molestias asperiores ea ullam repudiandae neque.
-                Amet quod expedita, esse voluptates tempore perspiciatis nemo vitae quis dignissimos eligendi perferendis, cumque optio fuga mollitia. Quisquam velit laborum laudantium beatae dicta, amet accusamus harum labore expedita distinctio sunt?
-                Laboriosam necessitatibus voluptas quos fuga sit!
-            </p>
+            <h1 className='main-title'>Contacts</h1>
+            <div className="row">
+                <div className="col-md-6">
+                    <div className="card contact-card">
+                        <div className="card-body">
+                            <h5 className="contact-title">Для потребителей</h5>
+                            <p className="contact-text">Бесплатная горячая линия</p>
+                            <p className="contact-text">+7-800-200-08-98</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-6">
+                    <div className="card contact-card">
+                        <div className="card-body">
+                            <h5 className="contact-title">По вопросам сотрудничества</h5>
+                            <p className="contact-text">Бесплатная горячая линия</p>
+                            <p className="contact-text">+7-800-200-02-08</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-6">
+                    <div className="card contact-card">
+                        <div className="card-body">
+                            <h5 className="contact-title">Написать нам</h5>
+                            <p className="contact-text">communications.russia@unilever-rus.ru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

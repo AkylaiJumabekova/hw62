@@ -1,14 +1,35 @@
 import React from 'react';
+import './AboutUs.css';
 
 const AboutUs: React.FC = () => {
     return (
         <div className="container mt-4">
-            <h1>About Us</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quia maxime aperiam deleniti mollitia, impedit sint totam laudantium doloribus nobis voluptatum suscipit incidunt. Impedit molestias asperiores ea ullam repudiandae neque.
-                Amet quod expedita, esse voluptates tempore perspiciatis nemo vitae quis dignissimos eligendi perferendis, cumque optio fuga mollitia. Quisquam velit laborum laudantium beatae dicta, amet accusamus harum labore expedita distinctio sunt?
-                Laboriosam necessitatibus voluptas quos fuga sit! Nihil labore ipsum debitis tempore cupiditate excepturi veniam facilis libero voluptatem sint, beatae laboriosam totam voluptate, qui obcaecati explicabo cumque doloribus repudiandae? Deleniti, hic!
-                Maxime ipsam non voluptatem nam exercitationem quo delectus consequatur doloribus unde minus commodi quasi, ad, sint veniam voluptas aut quia possimus voluptatum quibusdam nobis corporis obcaecati aspernatur eum!
-            </p>
+            <h1 className="main-title">About Us</h1>
+            <div className="content-wrapper">
+                <p>ЕЖЕДНЕВНО МОРОЖЕНОЕ ИНМАРКО ВЫБИРАЮТ ОКОЛО 1 МЛН. ПОКУПАТЕЛЕЙ. НЕУДИВИТЕЛЬНО: ВЕДЬ НАШЕ МОРОЖЕНОЕ ИЗВЕСТНО НАТУРАЛЬНЫМ ВКУСОМ И ОТЛИЧНЫМ КАЧЕСТВОМ, О ЧЁМ ГОВОРЯТ 20 НАШИХ НАГРАД И ПРЕМИЙ</p>
+            </div>
+            <div className="benefits">
+                <div className="benefit-item">
+                    <h5>Натуральные ингредиенты</h5>
+                    <p>Мы используем только натуральные продукты.</p>
+                </div>
+                <div className="benefit-item">
+                    <h5>Великолепный вкус</h5>
+                    <p>Наше мороженое покоряет с первого укуса.</p>
+                </div>
+                <div className="benefit-item">
+                    <h5>Богатый выбор</h5>
+                    <p>Широкий ассортимент вкусов для любого гурмана.</p>
+                </div>
+                <div className="benefit-item">
+                    <h5>Доступная цена</h5>
+                    <p>Лучшее качество по разумной цене.</p>
+                </div>
+                <div className="benefit-item">
+                    <h5>Награды и признание</h5>
+                    <p>20 наград за качество и вкус.</p>
+                </div>
+            </div>
         </div>
     );
 };

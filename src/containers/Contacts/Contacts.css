@@ -1,0 +1,37 @@
+.contact-card {
+    padding: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #195ec6;
+    color: #ffffff;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    background-color: #ffffff;
+    color: #195ec6;
+    border-color: #195ec6;
+}
+
+.contact-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+}
+
+.contact-text {
+    font-size: 16px;
+    color: inherit;
+}
+
+.main-title {
+    text-align: center;
+    color: #195ec6;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

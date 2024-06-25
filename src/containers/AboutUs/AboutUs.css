@@ -1,0 +1,47 @@
+.main-title {
+    text-align: center;
+    color: #195ec6;
+    margin-bottom: 40px;
+}
+
+.content-wrapper {
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    padding: 24px;
+    border: 2px solid #195ec6;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #195ec6;
+    font-weight: bold;
+}
+
+.content-wrapper:hover {
+    background-color: #195ec6;
+    color: #ffffff;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    width: 230px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    color: black;
+    border: 2px solid black;
+}
+
+.benefit-item:hover {
+    color: #195ec6;
+    border: 2px solid #195ec6;
+}
