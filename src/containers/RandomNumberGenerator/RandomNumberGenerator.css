@@ -1,0 +1,29 @@
+.App {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.title {
+    color: red;
+    font-size: 40px;
+}
+
+.numbers-container {
+    display: flex;
+    gap: 40px;
+}
+
+.new-numbers-button {
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 400px;
+    border: 1px solid white;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+}

@@ -29,6 +29,7 @@ const Contacts: React.FC = () => {
                         <div className="card-body">
                             <h5 className="contact-title">Написать нам</h5>
                             <p className="contact-text">communications.russia@unilever-rus.ru</p>
+                            <p className="contact-text">Вся информация была взята с сайта "https://www.inmarko.ru/"</p>
                         </div>
                     </div>
                 </div>

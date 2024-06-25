@@ -4,6 +4,8 @@ import Toolbar from './components/Toolbar/Toolbar';
 import Home from './containers/Home/Home';
 import AboutUs from './containers/AboutUs/AboutUs';
 import Contacts from './containers/Contacts/Contacts';
+import Portfolio from './containers/Portfolio/Portfolio';
+import RandomNumberGenerator from './containers/RandomNumberGenerator/RandomNumberGenerator';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +18,9 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/portfolio" element={<Portfolio />}>
+            <Route path="random-number-generator" element={<RandomNumberGenerator />} />
+          </Route>
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
       </main>
